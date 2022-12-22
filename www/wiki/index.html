@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Free Uncensored Speech</title>
+</head>
+<style>
+    body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url("/Untitled.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+</style>
+<body style="background-color: #404040;">
+    <div class="fluid" style="background-color: #404040; height: 60px;">
+       <div style="position: relative; top:5px; left:5px">
+            <button type="button" class="btn" style="height: 50px; background-color: #151e32; color: white;">
+                <a href="../index.html" style="color:inherit">Home</a>
+            </button>
+            <button type="button" class="btn" style="height: 50px; background-color: #1f2e4b;color: white;">
+                <a href="../post/index.html" style="color:inherit">Post</a>
+            </button>
+            <button type="button" class="btn" style="height: 50px; background-color: #2a3d64; color: white;">
+                <a href="../town/index.html" style="color:inherit">Town</a>
+            </button>
+            <button type="button" class="btn" style="height: 50px; background-color: #344d7d; color: white;">
+                <a href="../search/index.html" style="color:inherit">Search</a>
+            </button>
+            <button type="button" class="btn" style="height: 50px; position: relative; float: right; left: -10px; background-color: #2f2e2f; color: white;">
+                <a href="../wiki/index.html" style="color:inherit">Wiki</a>
+            </button>
+        </div>
+    </div>
+    <div class="fluid text-white text-center" style="height: 150px; background-color: #2f2e2f;">
+        <h1 style="font-size: 70px;" >F U S</h1>
+        <p style="font-size: 28px; position: relative; top:-10px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >Free Uncensored Speech</p> 
+        <p style="font-size: 15px; position: relative; top:-28px; color: #77c6c6;" >/wiki</p> 
+    </div>
+
+<center>
+<div style="padding: 20px; ">
+        <div style="background-color: #277BC0; height: 200px; width: 90%; border-radius: 10px">
+            <h1 id="headline" style="font-size: 45px; color: white; position: relative; top:40px;">Welcome to the Wiki</h1>
+        </div>
+</div>
+</center>
+<div class="row">
+
+    <div class="col-md-6" style="padding: 5px;">
+        <div  class="d-flex align-items-center justify-content-center">
+            <div style="padding: 10px; float: left;">
+                <div style="background-color: #151e32; height: 140px; width:160px; border-radius: 10px;" onclick="window.location.replace('/statistics')">
+                    <div style="position: relative; top:20px">
+                        <h1 style="font-size: 30px; color: white; text-align: center;">Posts</h1>
+                        <h1 id="posts" style="font-size: 30px; color: white; text-align: center;">--</h1>
+        
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 10px; float: left; display: inline;">
+                <div style="background-color: #1f2e4b; height: 140px; width:160px; border-radius: 10px;" onclick="window.location.replace('/statistics')">
+                    <div style="position: relative; top: 20px">
+                        <h1 style="font-size: 30px; color: white; text-align: center;">IDs</h1>
+                        <h1 id="IDs" style="font-size: 30px; color: white; text-align: center;">--</h1>
+        
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6" style="padding: 5px;">
+        <div class="d-flex align-items-center justify-content-center">
+            <div style="padding: 10px; float: left;">
+                <div style="background-color: #2a3d64; height: 140px; width:160px; border-radius: 10px;" onclick="window.location.replace('/statistics')">
+                    <div style="position: relative; top:20px">
+                        <h1 style="font-size: 30px; color: white; text-align: center;">Content</h1>
+                        <h1 id="content" style="font-size: 30px; color: white; text-align: center;">--</h1>
+        
+                    </div>
+                </div>
+            </div>
+            <div style="padding: 10px; float: left; display: inline;">
+                <div style="background-color: #344d7d; height: 140px; width:160px; border-radius: 10px;" onclick="window.location.replace('/statistics')">
+                    <div style="position: relative; top: 20px">
+                        <h1 style="font-size: 30px; color: white; text-align: center;">Channels</h1>
+                        <h1 id="channels" style="font-size: 30px; color: white; text-align: center;">--</h1>
+        
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+   <!-- <div class="col-sm-4" style="padding: 15px;">
+        <center>
+        <div style="background-color: rgb(70, 127, 208); height: 140px; width:160px; border-radius: 10px;">
+            <div style="position: relative; top: 20px">
+                <h1 style="font-size: 30px; color: white; text-align: center;">Channels</h1>
+                <h1 id="channels" style="font-size: 30px; color: white; text-align: center;">--</h1>
+
+            </div>
+        </div>
+        </center>
+    </div>
+-->
+</div>
+
+<div style="position: relative; top:60px">
+
+    <div style="padding: 10px;">
+        <div style="background-color: #293462; min-height:200px; border-radius: 5px;">
+            <div style="background-color: #1CD6CE; font-size: 30px; width: 220px; text-align: center; border-radius: 10px;">//Get started</div>
+            <center>
+            <div style="padding: 10px;">
+                <div style="background-color: #2f2e2f; min-height: 200px; width: 100%; border-radius: 5px; padding: 5px;">
+                    <div style="padding: 10px; color: white;">
+                        In order to use FUS safely, it is important to understand IDs. IDs are derived from your username and key. Peers can identify you and each other with these IDs. Because only you know your key, you can prove your identity. Because the ID (Hash) is displayed publicly, it is very important to choose a very long and secure key. It is just as important to store your key safely, if you forget it your ID is gone forever. IDs eliminate the need for accounts and there by fully place security in your hands. Ok, that's cool and all, but what about spamming posts? Well since there are no accounts it is impossible to ban someone, however every time someone creates a post he has to first mine a "ticket". The mining process is work for your Computer and therefore costs electricity (virtually none) which in turn you have to pay for. If you post a few posts a day you will not notice the mining process, however if you are running a big spam operation it will cost you (a lot!). So if someone does spam a lot, he punishes himself automatically. The same principle applies to boosts (likes, up-votes) here you also have to mine a ticket. It is important to note that the energy required for one ticket is a very, very small portion of a mili cent, so posts are virtually free.
+                        Choose a s3Cure and l00ng kEy!!!
+                        <br><div style="background-color: red; font-size: 20px; display: inline-block">Choose a s3Cure and l00ng kEy!!!</div>
+                    </div>
+                </div>  
+            </div>
+            </center>
+        </div>
+    </div>
+
+
+    <div style="padding: 10px;">
+        <div style="background-color: #293462; min-height:200px; border-radius: 5px;">
+            <div style="background-color: #1CD6CE; font-size: 30px; width: 220px; text-align: center; border-radius: 10px;">//What is FUS?</div>
+            <center>
+            <div style="padding: 10px;">
+                <div style="background-color: #2f2e2f; min-height: 200px; width: 100%; border-radius: 5px;">
+                    <div style="padding: 10px; color: white">
+                        FUS is a Web App that aims to be a town square for every one and anyone no matter their beliefs or opinions. A truly Fee and Liberal space in which no one has to fear prosecution and censorship because of what they say and believe in. In the modern day we use social media as a legitimate means of communication like for instance talking or writing. Now imagine other people could control what you say, who you speak to and if you even get so speak at all. This is exactly what has been and is happening, how can we make decisions or engage in arguments if some people can't speak? Furthermore, a lot of people can't say what they want for fear of losing their jobs, reputations and opportunities. Algorithms push us in to extreme positions and ideologies so that a true discussion is practically impossible. In order to use these platforms, you have to supply them with phone numbers and e-mails, trusting them with your sensitive data, further deanonymizing you. FUS solves these problems it's uncensored by design (the provider couldn't delete you if he wanted to) and although posts are made by pseudonymous IDs, the IDs are in no way tied to anything (e.g. e-mails, phone numbers) making it completely anonymous. Not only is the software free and open source, the database is 100% transparent and all data is displayed publicly. The provider has the exact same data anyone else has, hacking FUS would be a total waste of time, since all you need is a simple HTTP request! Anyone can copy the FUS code and run their own server (please do!), because IDs are basically just a math function you can prove your identity anywhere! I have put a lot of effort in to removing as much power from the provider as possible (don't trust me, read the code).
+                    </div>
+                    
+                </div>
+            </div>Your account has been flagged.
+            </center>
+        </div>
+    </div>
+    <div style="padding: 10px;">
+        <div style="background-color: #293462; min-height:200px; border-radius: 5px;">
+            <div style="background-color: #1CD6CE; font-size: 30px; width: 220px; text-align: center; border-radius: 10px;">//About me</div>
+            <center>
+            <div style="padding: 10px;">
+                <div style="background-color: #2f2e2f; min-height: 200px; width: 100%; border-radius: 5px;">
+                    <div style="padding: 10px; color: white;">
+                        Although I put some effort in to the style and ease of use it is mostly about the concept and the idea behind it. FUS should not be judged by my limited Web design skills ;-)
+                        <div style="background-color: black; color: rgb(0, 255, 0); word-wrap: break-word; border-radius: 10px; width: 90%;">
+                           I am 27b85af206bc0c9d178b1f6daaf6378dfc16e44ab6e2630521eaad664ce4cebd
+
+                        </div>
+                        I invented the concept and am the solo developer of FUS. 
+                        I hope you can appreciate what i made here. I realy belive that FUS (the concept) could work. If you want to run your own server or copy and continue FUS please do so!
+                    </div>
+                
+                </div>
+            </div>
+            </center>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<script src="/index.js"></script>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/posts.css">
+    <title>Free Uncensored Speech</title>
+</head>
+<style>
+    body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url("/Untitled.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+</style>
+<body style="background-color: #404040">
+    <div class="fluid" style="background-color: #404040; height: 60px;">
+        <div style="position: relative; top:5px; left:5px">
+            <button type="button" class="btn" style="height: 50px; background-color: #151e32; color: white;">
+                <a href="../index.html" style="color:inherit">Home</a>
+            </button>
+            <button type="button" class="btn" style="height: 50px; background-color: #1f2e4b;color: white;">
+                <a href="../post/index.html" style="color:inherit">Post</a>
+            </button>
+            <button type="button" class="btn" style="height: 50px; background-color: #2a3d64; color: white;">
+                <a href="../town/index.html" style="color:inherit">Town</a>
+            </button>
+            <button type="button" class="btn" style="height: 50px; background-color: #344d7d; color: white;">
+                <a href="../search/index.html" style="color:inherit">Search</a>
+            </button>
+            <button type="button" class="btn" style="height: 50px; position: relative; float: right; left: -10px; background-color: #2f2e2f; color: white">
+                <a href="../wiki/index.html" style="color:inherit">Wiki</a> 
+            </button>
+        </div>
+    </div>
+    <div class="fluid text-white text-center" style="height: 150px; background-color: #2f2e2f;">
+        <h1 style="font-size: 70px;" >F U S</h1>
+        <p style="font-size: 28px; position: relative; top:-10px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" >Free Uncensored Speech</p> 
+        <p style="font-size: 15px; position: relative; top:-28px; color: #77c6c6;" >/search</p> 
+    </div>
+
+    <div class="fluid" style="padding: 10px;" id="full_main">
+        <div id="main" style="min-height: 340px; width: 100%; background-color: #151e32; border-radius: 10px;">
+            <center>
+                <div style="height: 60px; width: 90%; background-color:white; border-radius: 10px; position: relative; top: 10px;">
+                    <div style="position: relative; top: 10px">
+                        <button type="button" class="btn" style="width: 21%; height: 40px; background-color: #151e32; color: white;" onclick="change('user')">User</button>
+                        <button type="button" class="btn" style="width: 21%; height: 40px; background-color: #1f2e4b; color: white;" onclick="change('post')">Post</button>
+                        <button type="button" class="btn" style="width: 27%; height: 40px; background-color: #2a3d64; color: white" onclick="change('keyword')">Keyword</button>
+                        <button type="button" class="btn" style="width: 25%; height: 40px; background-color: #344d7d; color: white;" onclick="change('channel')">Channel</button>
+
+                    </div>
+                    <div style="padding: 20px; position: relative; top: 90px; left: 18px;">
+                        <h1 id="headline" style="font-size: 40px; color: white; position: relative; top:-10px; left:-13px; text-align: center;">Search for a User</h1>
+                        <input type="text" class="form-control" id="search_term" placeholder="User id" style="height: 40px; width: 70%; float: left;"> 
+                        <button type="button" class="btn" style="height: 40px; width: 25%; float: left; display:inline; background-color: #77c6c6; color: white; text-align: center;" id="GO" onclick="search(searchtype)">GO</button>
+
+                    </div>
+                </div>
+            </center>
+        </div>
+        <center>
+            <h1 id="404" style="font-size: 35px; color: rgb(255, 0, 0); position: relative; left:-13px; top:20px; text-align: center; background-color: #0067B3; width: 200px;"></h1>
+        </center>
+        <div class="row" id="posts_row">
+            
+        </div>
+    </div>
+
+<!--
+            <div class="col-lg-6" style="padding: 10px;">
+                <div style="height: 300px; background-color: rgb(68, 51, 103); border-radius: 10px;">
+                    <h1 style="font-size: 40px; color: white; position: relative; top:13px; text-align: center;">Search for a Ticket</h1>
+                    <div style="padding: 20px; position: relative; top: 20px; left: 18px;">
+                        <input type="text" class="form-control" id="channel" placeholder="Channel (optional)" style="height: 40px; width: 70%; float: left;"> 
+                        <button type="button" class="btn" style="height: 42px; width: 25%; float: left; display:inline; background-color: rgb(0, 0, 0); color: white;" onclick="user_post()">POST</button>
+                    </div>
+                </div>
+            </div>
+        -->
+</body>
+<script src="index.js"></script>
+<script src="/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+</html>
