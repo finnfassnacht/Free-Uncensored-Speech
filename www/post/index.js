@@ -1,7 +1,9 @@
 function changetown(){
     window.location.replace("/town/index.html")
 }
-
+function checkURL(url) {
+    return(url.match(/\.(jpeg|jpg|gif|png)$/) != null);
+}
 
 async function main_post(user_tag,passwd,content,channel,image){
     var mined = await getTicket()
@@ -68,7 +70,7 @@ function user_post() {
     var content = document.getElementById("content").value;
     var channel = document.getElementById("channel").value;
     var image = document.getElementById("image_url").value;
-    if (image == ""){
+    if (image == "" || checkURL(image) == false || image.startsWith("https://") == false || image.startsWith("http://") == false){
         image = "none"
     }
     document.getElementById("user_tag").value = ""
