@@ -70,7 +70,7 @@ function user_post() {
     var content = document.getElementById("content").value;
     var channel = document.getElementById("channel").value;
     var image = document.getElementById("image_url").value;
-    if (image == "" || checkURL(image) == false || image.startsWith("https://") == false || image.startsWith("http://") == false){
+    if (image == "" || checkURL(image) == false || image.startsWith("https://") == false){
         image = "none"
     }
     document.getElementById("user_tag").value = ""
