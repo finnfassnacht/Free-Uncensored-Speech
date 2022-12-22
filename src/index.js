@@ -7,7 +7,6 @@ const client = new MongoClient(uri);
 const serverless = require("serverless-http");
 // set basic server options
 const app = express()
-// app.use(express.static("www"))
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 const router = express.Router();
