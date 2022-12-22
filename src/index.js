@@ -3,6 +3,7 @@ const express = require("express")
 const crypto = require("crypto")
 const { MongoClient } = require("mongodb")
 const uri = process.env.USER_KEY;
+const database_info = process.env.DB_I;
 const client = new MongoClient(uri);
 const serverless = require("serverless-http");
 // set basic server options
@@ -18,22 +19,22 @@ function round(value, precision) {
 }
 
 async function write(client, newListing){
-    const result = await client.db("fus").collection("data").insertOne(newListing);
+    const result = await client.db(database_info).collection("data").insertOne(newListing);
     return true
 }
 
 async function write_ticket(client, newListing){
-    const result = await client.db("fus").collection("tickets").insertOne(newListing);
+    const result = await client.db(database_info).collection("tickets").insertOne(newListing);
     return true
 }
 
 async function read(client,col){
-    const result = await client.db("fus").collection(col).find({}).toArray();
+    const result = await client.db(database_info).collection(col).find({}).toArray();
     return result
 }
 
 async function remove(client,num) {
-    const result = await client.db("fus").collection("tickets").deleteMany({"n": {$lt : num}});
+    const result = await client.db(database_info).collection("tickets").deleteMany({"n": {$lt : num}});
     console.log(result)
     return result
 }
