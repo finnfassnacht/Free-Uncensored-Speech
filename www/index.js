@@ -30,7 +30,7 @@ function miner(ticket) {
     // takes ticket as argument
     // ads a random strings until a SHA-256 with st_val is found
     // returns new ticket
-    var st_val = "00000"
+    var st_val = "000000"
     not_found = true
     while (not_found){
         var ran_data_set = (ticket + "<>" + makeran())
