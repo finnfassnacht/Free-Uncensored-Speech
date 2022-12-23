@@ -73,11 +73,6 @@ function user_post() {
     if (image == "" || checkURL(image) == false || image.startsWith("https://") == false){
         image = "none"
     }
-    document.getElementById("user_tag").value = ""
-    document.getElementById("passwd").value = ""
-    document.getElementById("content").value = ""
-    document.getElementById("channel").value = ""
-    document.getElementById("image_url").value = ""
         var loader = document.getElementById("loader").style="width:100%; display:block;"
         main_post(name,passwd,content,channel,image)
 }
