@@ -117,7 +117,7 @@ async function checkticket(dataset, number) {
     const sha256Hasher = crypto.createHash("sha256");
     const server_hash = sha256Hasher.update(dataset).digest("hex");
     // if SHA-256 hash starts with x amount of 0
-    if (server_hash.substring(0, 6) == "000000") {
+    if (server_hash.substring(0, 5) == "00000") {
         console.log("[+] hash correct")
 
         var usticket = dataset.split("<>")
