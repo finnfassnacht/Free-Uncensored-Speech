@@ -4,6 +4,18 @@ function changetown(){
 function checkURL(url) {
     return(url.match(/\.(jpeg|jpg|gif|png)$/) != null);
 }
+const image_input = document.querySelector("#image_url");
+image_input.addEventListener("change", function() {
+    var center_el = document.getElementById("mainbox").remove()
+    var mainbox = document.createElement("center");
+    mainbox.id = "mainbox";
+    document.getElementById("notmain").appendChild(mainbox);
+    var image = document.getElementById("image_url").value;
+    var img_el = document.createElement("img")
+    img_el.src = image;
+    img_el.style = "width: 83%;height: 350px;border-radius: 5px;border: 1px solid black;"
+    document.getElementById("mainbox").appendChild(img_el);
+});
 
 async function main_post(user_tag,passwd,content,channel,image){
     var mined = await getTicket()
